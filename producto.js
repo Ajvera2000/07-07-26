@@ -1,6 +1,6 @@
 // producto.js
 class Producto {
-    constructor(id, nombre, precio Base) {
+    constructor(id, nombre, precioBase) {
         this.id = id;
         this.nombre = nombre;
         this.precioBase = precioBase; // <-- Añadido en Commit 3
