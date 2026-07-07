@@ -3,6 +3,8 @@ name: Build and Publish Docker Image
 on:
   push:
     branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ] # Esto activa el Action cuando se abre, edita o actualiza un PR hacia main
 
 jobs:
   push_to_registry:
