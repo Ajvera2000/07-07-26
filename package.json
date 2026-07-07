@@ -1,0 +1,9 @@
+{
+  "name": "proyecto-colaborativo",
+  "version": "1.0.0",
+  "description": "Proyecto integrador con Docker y CI/CD",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
