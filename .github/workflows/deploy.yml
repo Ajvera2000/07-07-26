@@ -2,7 +2,7 @@ name: Build and Publish Docker Image
 
 on:
   push:
-    branches: [ "main" ] # Se ejecutará automáticamente cuando los PR se unan a main
+    branches: [ "main" ]
 
 jobs:
   push_to_registry:
@@ -34,5 +34,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ std_out.meta.outputs.tags }}
-          labels: ${{ std_out.meta.outputs.labels }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
